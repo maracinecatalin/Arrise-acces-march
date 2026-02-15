@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Security Access</title>
+  <style>
+    :root{ --primary:#7c5ce6; --bg:#f8f8ff; --text:#111; }
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 50% -10%, #ffffff 0, var(--bg) 60%, #f3f3ff 100%);
+      color:var(--text); display:flex; align-items:center; justify-content:center; padding:16px;
+    }
+    .card{
+      width:min(720px, 92vw); padding: clamp(20px, 4vw, 36px);
+      background:#fff; border-radius:24px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.08), inset 0 0 0 2px rgba(124,92,230,.15);
+    }
+    .brand{ display:flex; align-items:center; gap:12px; color:var(--primary);
+      font-weight:800; letter-spacing:.06em; text-transform:uppercase; font-size: clamp(18px, 2.6vw, 22px);}
+    .badge{ border:3px solid var(--primary); padding:6px 12px; border-radius:12px; display:inline-block; font-weight:800; }
+    h1{ margin:12px 0 8px; font-size: clamp(28px, 5.2vw, 38px); }
+    .date{ color:#555; font-size: clamp(16px, 2.6vw, 18px); }
+    .hint{ margin-top:18px; color:#666; }
+    .footer{ margin-top:26px; font-size:12px; color:#888 }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <div class="brand" aria-label="Brand">
+      <span class="badge" aria-hidden="true">ARRISE</span>
+      <span>Security</span>
+    </div>
+    <h1 id="title">Security access</h1>
+    <p class="date">Access is granted during <strong>March</strong>.</p>
+    <p class="hint">Present this QR at the checkpoint.</p>
+    <div class="footer">© 2026 ARRISE – All rights reserved</div>
+  </main>
+</body>
+</html>
